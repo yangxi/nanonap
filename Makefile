@@ -8,3 +8,6 @@ all:
 
 user:
 	gcc -o test_latency ./test_latency.c -lpthread -lpfm -pthread
+	gcc -o batch ./batch.c -lpthread -lpfm -pthread
+	gcc -o test_mutex ./test_mutex.c -lpthread -lpfm -pthread
+	gcc -o ./nanosleep ./nanosleep.c -lpthread -lpfm -pthread -lrt
